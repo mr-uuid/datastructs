@@ -6,7 +6,7 @@ install_reqs = pip.req.parse_requirements("requirements.txt", session=False)
 reqs = [str(ir.req) for ir in install_reqs]
 
 config = {
-	'author': 'Omar Eid',
+    'author': 'Omar Eid',
     'author_email': 'omar_eid21@yahoo.com',
     'url': 'https://www.github.com/mr-uuid/datastructs',
     'name': "datastructs",
