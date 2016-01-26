@@ -1,9 +1,9 @@
-from node import ListNode as Node
+from nodes import ListNode as Node
 
 class LinkedList(list):
     head = tail = None
 
-    def __init__(self, _list=None): 
+    def __init__(self, _list=None):
         if _list:
             for item in _list:
                 self.append(item)
@@ -40,7 +40,7 @@ class LinkedList(list):
             node = Node(value)
             node.next = self.head
             self.head = node
-            return 
+            return
 
         # We need to create any additional nodes needed
         if index > self.length():
